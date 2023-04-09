@@ -14,12 +14,11 @@ public class LoginServlet extends HttpServlet {
                     throws ServletException, IOException {  
         response.setContentType("text/html");  
         PrintWriter out=response.getWriter();  
-//        request.getRequestDispatcher("link.html").include(request, response);  
           
         String name=request.getParameter("name");  
         String password=request.getParameter("password");  
           
-        if(password.equals("admin123")){  
+        if(name.contentEquals("admin") && password.equals("admin123")){  
         	request.getRequestDispatcher("linkLogoutDashboard.html").include(request, response);
         	out.print("Welcome, "+name);  
         	HttpSession session=request.getSession();  

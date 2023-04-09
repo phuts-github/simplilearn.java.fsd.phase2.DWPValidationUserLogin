@@ -13,7 +13,7 @@ public class DashBoardServlet extends HttpServlet {
                       throws ServletException, IOException {  
         response.setContentType("text/html");  
         PrintWriter out=response.getWriter();  
-          
+        
         HttpSession session=request.getSession(false);  
         if(session!=null){  
             request.getRequestDispatcher("linkLogout.html").include(request, response);          	

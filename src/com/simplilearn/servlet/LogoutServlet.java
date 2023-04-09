@@ -13,8 +13,8 @@ public class LogoutServlet extends HttpServlet {
         protected void doGet(HttpServletRequest request, HttpServletResponse response)  
                                 throws ServletException, IOException {  
             response.setContentType("text/html");  
-            PrintWriter out=response.getWriter();  
-              
+            PrintWriter out=response.getWriter(); 
+            
             request.getRequestDispatcher("linkLogin.html").include(request, response);  
               
             HttpSession session=request.getSession();  
