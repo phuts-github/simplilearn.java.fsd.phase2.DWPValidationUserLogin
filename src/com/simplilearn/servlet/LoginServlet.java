@@ -1,13 +1,13 @@
 package com.simplilearn.servlet;
 
 
-import java.io.IOException;  
-import java.io.PrintWriter;  
-  
-import javax.servlet.ServletException;  
-import javax.servlet.http.HttpServlet;  
-import javax.servlet.http.HttpServletRequest;  
-import javax.servlet.http.HttpServletResponse;  
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;  
 public class LoginServlet extends HttpServlet {  
     protected void doPost(HttpServletRequest request, HttpServletResponse response)  
@@ -26,9 +26,10 @@ public class LoginServlet extends HttpServlet {
         	session.setAttribute("name",name);  
         }  
         else{  
-            out.print("Sorry, username or password error!");  
+            out.print("Sorry, username or password error!");
+            out.print("<br/>");
             request.getRequestDispatcher("login.html").include(request, response);  
         }  
-        out.close();  
+        out.close();   
     }  
 } 

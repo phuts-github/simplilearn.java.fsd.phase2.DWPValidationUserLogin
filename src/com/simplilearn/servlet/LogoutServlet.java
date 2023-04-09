@@ -22,6 +22,6 @@ public class LogoutServlet extends HttpServlet {
               
             out.print("You are successfully logged out!");  
               
-            out.close();  
+            out.close();   
     }  
 }  

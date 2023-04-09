@@ -3,12 +3,6 @@
   <display-name>DWPValidationUserLogin</display-name>
   <welcome-file-list>
 	<welcome-file>home.htm</welcome-file>
-<!--     <welcome-file>index.html</welcome-file> -->
-<!--     <welcome-file>index.htm</welcome-file> -->
-<!--     <welcome-file>index.jsp</welcome-file> -->
-<!--     <welcome-file>default.html</welcome-file> -->
-<!--     <welcome-file>default.htm</welcome-file> -->
-<!--     <welcome-file>default.jsp</welcome-file> -->
   </welcome-file-list>
   
   <servlet>
@@ -18,7 +12,7 @@
   <servlet-mapping>
     <servlet-name>com.simplilearn.servlet.LoginServlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping> 
 
   <servlet>
     <servlet-name>com.simplilearn.servlet.LogoutServlet</servlet-name>
